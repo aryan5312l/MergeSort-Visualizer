@@ -1,0 +1,108 @@
+.tree-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.link {
+  fill: none;
+  stroke: #ced4da;
+  stroke-width: 2px;
+}
+
+.node-circle {
+  fill: #adb5bd;
+  stroke: white;
+  stroke-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.node-circle.active {
+  fill: #4dabf7;
+  stroke: #1971c2;
+  stroke-width: 3px;
+}
+
+.node-circle.completed {
+  fill: #51cf66;
+  stroke: #2b8a3e;
+}
+
+.node-circle.base-case {
+  fill: #94d82d;
+  stroke: #5c940d;
+}
+
+.node-label {
+  font-size: 12px;
+  font-weight: bold;
+  fill: #343a40;
+}
+
+.array-values {
+  font-size: 10px;
+  fill: #495057;
+}
+
+.cost-label {
+  font-size: 10px;
+  fill: #868e96;
+  font-style: italic;
+}
+
+.tree-legend {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.legend-dot.active {
+  background: #4dabf7;
+}
+
+.legend-dot.completed {
+  background: #51cf66;
+}
+
+.legend-dot.base-case {
+  background: #94d82d;
+}
+
+/* ... existing styles ... */
+
+.mini-array {
+  transition: all 0.3s ease;
+}
+
+.mini-bar {
+  transition: all 0.2s ease;
+}
+
+.mini-bar.highlighted {
+  stroke: #ffd43b;
+  stroke-width: 2px;
+  filter: drop-shadow(0 0 2px rgba(255, 212, 59, 0.7));
+}
+
+.step-indicator {
+  font-size: 14px;
+  fill: #495057;
+  font-weight: bold;
+}
+
+.legend-dot.highlighted {
+  background: #ff6b6b;
+}
