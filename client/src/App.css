@@ -5,6 +5,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f8f9fa;
   min-height: 100vh;
+  position: relative;
 }
 
 h1 {
@@ -226,4 +227,38 @@ h1::after {
   .analysis-container {
     padding: 15px;
   }
+}
+
+.author-credit {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #1a73e8, #4dabf7);
+  padding: 12px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+  transform: rotate(2deg);
+  transition: all 0.3s ease;
+  text-align: center;
+  line-height: 1.4;
+  z-index: 1000;
+}
+
+.author-credit:hover {
+  transform: rotate(0deg) translateY(-2px);
+  box-shadow: 0 6px 20px rgba(26, 115, 232, 0.4);
+}
+
+.author-credit .name {
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.author-credit .id {
+  font-size: 0.85rem;
+  opacity: 0.9;
 }

@@ -315,6 +315,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="author-credit">
+        <span className="name">Made By: Aharnish Dubey</span>
+        <span className="id">4NI23CS011</span>
+      </div>
       <h1>Merge Sort Visualizer</h1>
       <div className="controls">
         <div className="input-group">
